@@ -1,7 +1,7 @@
 {
 	"name":"Pet",
 	"thumbnail":"pet.png",
-	"screenshot":"stitch.png",
+	"screenshot":"pet.png",
 	"templateType":"standard",
             "pageTypes": [
         "home"
