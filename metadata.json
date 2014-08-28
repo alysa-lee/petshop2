@@ -1,6 +1,6 @@
 {
 	"name":"Pet",
-	"thumbnail":"stitch.png",
+	"thumbnail":"pet.png",
 	"screenshot":"stitch.png",
 	"templateType":"standard",
             "pageTypes": [
