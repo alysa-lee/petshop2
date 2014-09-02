@@ -12,36 +12,40 @@
     </div>
 
 </header>
-
-<div class="canvas">
+<!--<div class="canvas">-->
+<div>
 
 <section>
-{{widget('responsiveslideshow', 'thisunqiuewidgetname', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': true, 'allowLoop': true, 'images':
+{{widget('responsiveslideshow', 'thisunqiuewidgetname', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': false, 'allowLoop': true, 'images':
 [
-{'imageHeight':'555', 'imageWidth':'957', 'url':'images/feature-bg1.jpg', 'title':'test title', 'description': 'test desc'},
-{'imageHeight':'555', 'imageWidth':'957', 'url':'images/feature-bg2.jpg', 'title':'test title', 'description': 'test desc'},
-{'imageHeight':'555', 'imageWidth':'957', 'url':'images/feature-bg3.jpg', 'title':'test title', 'description': 'test desc'}
+{'imageHeight':'555', 'imageWidth':'1000', 'url':'images/feature-bg1.jpg', 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'555', 'imageWidth':'1000', 'url':'images/feature-bg2.jpg', 'title':'test title', 'description': 'test desc'},
+{'imageHeight':'555', 'imageWidth':'1000', 'url':'images/feature-bg3.jpg', 'title':'test title', 'description': 'test desc'}
 ]
 })|raw}}
   
   </section>
 
-<div class="inner-bg">
+<!--<div class="inner-bg">-->
 
 <div class="main wrapper clearfix">
 {{zone('main')|raw}}
 </div>  
 
-</div>
+<!--</div>-->
 
 </div>
 
 
 <footer class="bk-footer">
     <div class="wrapper clearfix">
-        {{widget('profile', 'footercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}           
+    	{{widget('logo', 'thisunqiuewidgetname', {"defaultlogo": asset('images/logo.png')})|raw}}
         {{widget('profile', 'footercolumn1address', { 'profileType':'address', 'address':'profile'})|raw}}
-        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+        {{widget('socialicons', 'thisunqiuewidgetname', {'googleplus': 'profile', 'linkedin':'profile', 'facebook': 'profile', 'twitter': 'profile', 'youtube': 'profile', 'rss': 'profile', 'align': 'widget-align-right'})|raw}}
+        {{widget('facebooklike', 'thisunqiuewidgetname', {text: 'FaceBook Like', showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.basekit.com'})|raw}}
+        {{widget('profile', 'footercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}           
+
     </div>
 </footer>
 
